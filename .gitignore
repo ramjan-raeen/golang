@@ -1,0 +1,9 @@
+# .gitignore file for Go project
+# Ignore macOS system files
+.DS_Store
+# Ignore Go build artifacts
+*.exe
+*.out
+*.test
+# Ignore vendor directory
+vendor/

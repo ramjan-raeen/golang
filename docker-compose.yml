@@ -1,0 +1,15 @@
+# docker-compose.yml
+
+services:
+  go-app:
+    build: .
+    container_name: go_app_container
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["air", "-c", ".air.toml"]
+    # command: air
+    # tty: true
+    # stdin_open: true
